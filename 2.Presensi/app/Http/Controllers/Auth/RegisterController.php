@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\hash;
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
@@ -51,6 +51,8 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            'npp' => ['required', 'string', 'max:255'],
+            'npp_supervisor' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -66,8 +68,10 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'npp' => $data['npp'],
+            'npp_supervisor' => $data['npp_supervisor'],
             'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'password' => hash::make($data['password']),
         ]);
     }
 }

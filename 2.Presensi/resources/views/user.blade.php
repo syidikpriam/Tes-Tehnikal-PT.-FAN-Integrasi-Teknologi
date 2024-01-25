@@ -14,6 +14,8 @@
                         <tr>
                             <th>Nama</th>
                             <th>Email</th>
+                            <th>NPP</th>
+                            <th>NPP Supervisor</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -21,6 +23,8 @@
                         <tr>
                             <td>{{$item->name}}</td>
                             <td>{{$item->email}}</td>
+                            <td>{{$item->npp}}</td>
+                            <td>{{$item->npp_supervisor}}</td>
                         </tr>
                         @endforeach
                     </tbody>

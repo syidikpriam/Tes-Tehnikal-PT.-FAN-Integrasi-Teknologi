@@ -40,6 +40,34 @@
                         </div>
 
                         <div class="row mb-3">
+                            <label for="npp" class="col-md-4 col-form-label text-md-end">{{ __('NPP') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="npp" type="text" class="form-control @error('npp') is-invalid @enderror" name="npp" value="{{ old('npp') }}" required autocomplete="name" autofocus>
+
+                                @error('npp')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="npp_supervisor" class="col-md-4 col-form-label text-md-end">{{ __('NPP Supervisor') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="npp_supervisor" type="text" class="form-control @error('npp_supervisor') is-invalid @enderror" name="npp_supervisor" value="{{ old('npp_supervisor') }}" required autocomplete="name" autofocus>
+
+                                @error('npp_supervisor')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                             <div class="col-md-6">

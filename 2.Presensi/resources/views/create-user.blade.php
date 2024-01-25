@@ -20,6 +20,16 @@
                             <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
                             
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">NPP</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="npp" aria-describedby="emailHelp">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">NPP Supervisor</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="npp_supervisor" aria-describedby="emailHelp">
+                            
+                        </div>
                         <div class="form-group mt-2">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
