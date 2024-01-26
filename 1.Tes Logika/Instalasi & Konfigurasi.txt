@@ -1,0 +1,5 @@
+Instalasi & Konfigurasi
+
+clone repositori ini "https://github.com/syidikpriam/Tes-Tehnikal-PT.-FAN-Integrasi-Teknologi.git"
+Lalu buka terminal dan jalankan python nama-file, contoh "python soal1-A.py"
+
